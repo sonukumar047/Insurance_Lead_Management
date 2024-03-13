@@ -1,6 +1,7 @@
 package com.masai.model;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -41,9 +42,9 @@ public class InsurancePolicy {
     
     @JsonIgnore
     @OneToMany(mappedBy = "policy")
-    private List<Claim> claims;
+    private List<Claim> claims = new ArrayList<>();
     
     @JsonIgnore
     @OneToMany(mappedBy = "policy")
-    private List<Payment> payments;
+    private List<Payment> payments = new ArrayList<>();
 }
