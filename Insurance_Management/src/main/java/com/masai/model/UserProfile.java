@@ -1,5 +1,7 @@
 package com.masai.model;
 
+import java.time.LocalDate;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -25,6 +27,8 @@ public class UserProfile {
 	private String email;
 	
 	private String password;
+	
+	private LocalDate createdAt = LocalDate.now();
 	
 	@Enumerated(EnumType.STRING)
 	private Role role;

@@ -28,6 +28,6 @@ public class Payment {
     
     @JsonIgnore
     @ManyToOne
-    @JoinColumn(name = "policy_id")
+    @JoinColumn(name = "policy_id", nullable = false)
     private InsurancePolicy policy;
 }

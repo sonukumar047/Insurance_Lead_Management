@@ -6,4 +6,5 @@ import com.masai.model.Notification;
 
 public interface NotificationRepository extends JpaRepository<Notification, Long> {
 
+//	List<Notification> findByReadStatusFalseAndUserId(Long userId);
 }
