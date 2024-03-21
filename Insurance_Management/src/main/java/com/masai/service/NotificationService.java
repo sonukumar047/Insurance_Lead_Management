@@ -9,6 +9,6 @@ public interface NotificationService {
     Notification getNotificationById(Long notificationId);
     Notification createNotification(Notification notification);
     Notification updateNotification(Long notificationId, Notification notificationDetails);
-    void deleteNotification(Long notificationId);
+    String deleteNotification(Long notificationId);
     List<Notification> getUnreadNotificationsForUser(Long userId);
 }

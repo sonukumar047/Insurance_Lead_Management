@@ -9,7 +9,7 @@ public interface ClaimService {
     Claim getClaimById(Long claimId);
     Claim createClaim(Claim claim);
     Claim updateClaim(Long claimId, Claim claimDetails);
-    void deleteClaim(Long claimId);
+    String deleteClaim(Long claimId);
     List<Claim> getClaimsByStatus(String status);
     List<Claim> getClaimsForPolicy(Long policyId);
 }
